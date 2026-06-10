@@ -4,7 +4,8 @@ Based on PSFree version 1.5.1
 **ps4Phoenix** is a highly stable and mirrored web exploit host for the PlayStation 4 console. It utilizes the modern **PSFree** WebKit exploit combined with the **Lapse** kernel exploit to trigger GoldHEN and payload loading entirely **without the need for a USB drive (No USB Required)**.
 
 ## 🚀 Live Host (PS4 Browser Link)
-Open your PS4 Web Browser and navigate to your GitHub Pages link once activated.
+Open your PS4 Web Browser and navigate directly to:
+> **`https://ps4Phoenix.github.io/`**
 
 ---
 
