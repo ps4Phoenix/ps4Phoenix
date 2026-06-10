@@ -1,55 +1,67 @@
-# PSFree Enhanced
-based on PSFree version 1.5.1
+# ps4Phoenix Enhanced Host
+Based on PSFree version 1.5.1
 
-PSFree is a collection of exploits for the PS4 console. The main focus of the repo is for the PS4.
+**ps4Phoenix** is a highly stable, mirrored, and enhanced web exploit host for the PlayStation 4 console. It utilizes the modern **PSFree** WebKit exploit combined with the **Lapse** kernel exploit to trigger GoldHEN and payload loading entirely **without the need for a USB drive (No USB Required)**.
 
-## Features
+## 🚀 Live Host (PS4 Browser Link)
+Open your PS4 Web Browser and navigate to:
+> **`https://YOUR_GITHUB_USERNAME.github.io/ps4Phoenix/`**
+
+*(Note: Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username).*
+
+---
+
+## ✨ Features
 
 - **Auto-detection:** Automatically detects console type and firmware version (via `src/config.mjs`).
-- **WebKit Exploit (PSFree):** Entry point via the console's web browser.
-- **Kernel Exploit (Lapse):** Escalates privileges to kernel level.
-- **Payload Loader:** After successful kernel exploitation listens for a payload on port 9020.
+- **WebKit Exploit (PSFree):** Modern high-success-rate entry point via the console's web browser.
+- **Kernel Exploit (Lapse):** Escalates privileges to kernel level smoothly on 9.00.
+- **Payload Loader:** After successful kernel exploitation, it listens for payloads on port 9020.
+- **Full Offline Cache Support:** Once loaded 100%, you can use the host completely offline without internet.
 
-## Additional features
-- Language switcher
-- HEN flavor selector
-- GoldHEN version selector
-- Descriptive payload selection
-- Unsuported payload loading protection
-- Load payloads with GoldHEN's PayLoader through a mirrored [http host](http://psfree-enhanced.free.nf/)
+## 🛠️ Additional Custom Features
+- Language switcher.
+- HEN flavor selector.
+- GoldHEN version selector (Up to date with v2.4b18).
+- Descriptive payload selection.
+- Unsupported payload loading protection.
 - Offers more features when hosted locally on a PC or a PS4 using [PS4-Websrv](https://github.com/ArabPixel/ps4-websrv)
-  - Send payloads from any smart device to the PS4 
-  - Scans the network to find the PS4
-- Up to date
+  - Send payloads from any smart device to the PS4.
+  - Scans the local network to locate your PS4.
 
-## Supported by this Repository
+---
+
+## 📅 Supported Firmwares by ps4Phoenix
 
 This table indicates firmware versions for which the _current version_ of this repository provides a functional and tested exploit chain.
 
-|  #            | PSFree    | Lapse     |GoldHEN's PayLoader
-| :------------ | :-------- | :-------- | :--------
-| PlayStation 4 | 7.00-9.60 | 7.00-9.60 | 7.00 - latest
+| Device | PSFree (WebKit) | Lapse (Kernel) | GoldHEN's PayLoader |
+| :--- | :--- | :--- | :--- |
+| **PlayStation 4** | 7.00 - 9.60 | 7.00 - 9.60 | 7.00 - Latest |
 
+---
 
-## TODO List
+## 📝 TODO List
 
-- [X] ~~Blackscreen/Save issue with certain games~~ Issue is patched post-exploit
-  - [ ] Determine root cause and fix more directly
-- [ ] `lapse.mjs`: Just set the bits for JIT privs
-- [ ] `view.mjs`: Assumes PS4, support PS5 as well
-- [ ]  Support lower firmwares by adding other exploits
+- [x] ~~Blackscreen/Save issue with certain games~~ *Issue is patched post-exploit*
+- [ ] Determine root cause of memory panics and fix more directly.
+- [ ] `lapse.mjs`: Just set the bits for JIT privileges.
+- [ ] `view.mjs`: Support PS5 firmware structures.
 
-## Contribution
-You can :
-- look at the [languages folder](https://github.com/ArabPixel/PSFree-Enhanced/tree/main/includes/js/languages) and PR your language!
--  improve the host by modefying, updating or adding new features!
-## Copyright and Authors:
+---
 
-AGPL-3.0-or-later (see [LICENSE](LICENSE)). Part of this repo belongs to the group `anonymous`. We refer to anonymous contributors as "anonymous" as well.
+## 👥 Contribution & Credits
 
-## Credits:
+Feel free to open a Pull Request (PR) to improve the host by modifying, updating, or adding new features!
 
-- anonymous for PS4 firmware kernel dumps
-- Check the appropriate files for any **extra** contributors. Unless otherwise stated, everything here can also be credited to us.
-- Nazky for some code inspiration.
-- Feyzee61 for the second PSFree lapse implementation.
+### Credits:
+- **Sleirsgoevy & ChendoChap:** For the original revolutionary PSFree implementation.
+- **ArabPixel:** For the original Enhanced repository code structure.
+- **Nazky:** For code and workflow inspirations.
+- **Feyzee61:** For the second PSFree lapse kernel implementation.
+- **Anonymous:** For PS4 firmware kernel dumps.
+
+---
+
+## 📄 Copyright and License
+This project is licensed under the AGPL-3.0-or-later. Part of this repository belongs to the group `anonymous`.
